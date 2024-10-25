@@ -338,9 +338,9 @@ footer {
   padding: 25px 0;
   background-color: var(--black_col);
   color: var(--sec_color);
-  border: 1px solid #fe8c45;
+  
   & .footer_logo{
-    border: 1px solid #fe8c45;
+    
     & .img{
       width: 100%;
     }
@@ -348,7 +348,7 @@ footer {
   
   & .footer_copyright {
     text-align: center;
-    border: 1px solid #fe8c45;
+    
     display: flex;
     justify-content: center;
     a {
@@ -360,7 +360,7 @@ footer {
   }
   
   .footer_social {
-    border: 1px solid #fe8c45;
+    
     text-align: end;
     ul {
       li {
