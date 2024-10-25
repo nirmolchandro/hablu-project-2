@@ -348,7 +348,6 @@ footer {
   
   & .footer_copyright {
     text-align: center;
-    
     display: flex;
     justify-content: center;
     a {
