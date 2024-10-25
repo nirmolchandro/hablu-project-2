@@ -32,6 +32,7 @@ p {
 .menu {
   ul {
     li {
+
       a {
         margin: 0 15px;
         color: var(--black_col);
@@ -52,7 +53,7 @@ p {
 .get_btn {
   background-color: var(--btn_col);
 }
-
+/* banner section code start */
 #banner_section {
   margin-bottom: 40px;
   
@@ -79,8 +80,9 @@ p {
 #about_section {
   padding: 80px 0;
   background-color: var(--sec_color);
+
   
-  .about_contant {
+  & .about_contant {
     h1 {
       font-size: 48px;
       font-weight: 700;
@@ -196,7 +198,7 @@ p {
   padding-right: 10px;
   padding-left: 10px;
 }
-
+ 
 .img_left {
   height: 289px;
 }
@@ -336,16 +338,30 @@ footer {
   padding: 25px 0;
   background-color: var(--black_col);
   color: var(--sec_color);
+  border: 1px solid #fe8c45;
+  & .footer_logo{
+    border: 1px solid #fe8c45;
+    & .img{
+      width: 100%;
+    }
+  }
   
-  .footer_copyright {
+  & .footer_copyright {
+    text-align: center;
+    border: 1px solid #fe8c45;
+    display: flex;
+    justify-content: center;
     a {
+      display: block;
       color: var(--clien_btn);
-      margin: 0 20px;
+      margin: 10px 20px;
       text-decoration: underline;
     }
   }
   
   .footer_social {
+    border: 1px solid #fe8c45;
+    text-align: end;
     ul {
       li {
         a {

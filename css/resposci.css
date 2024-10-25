@@ -1,3 +1,12 @@
+
+:root {
+  --btn_col: #fe8c45;
+  --black_col: #222222;
+  --tex_sec_col: #8a47f6;
+  --sec_color: #f3edfe;
+  --clien_btn: #e3d4fd;
+}
+
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {}
 
@@ -63,7 +72,21 @@
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-
+  /* manue */
+  .menu {
+    ul {
+      li {
+        background-color: var(--sec_color);
+        margin: 3px 0;
+        &:hover{
+          background-color: var(--clien_btn);
+        }
+        a {
+          
+        }
+      }
+    }
+  }
 
   /* banner section  */
   #banner_section{
@@ -87,8 +110,7 @@
   /* about section  */
 
   #about_section{
-    padding: 80px 0;
-    background-color: var(--sec_color);
+    padding: 60px 0;
     & .about_contant{
       margin-top: 50px;
       text-align: center;
@@ -96,12 +118,7 @@
         font-size: 35px;
       }
       & .about_btn{
-        display: block;
-  
-        justify-content: center;
-        margin-top: 30px;
-        width: 200px;
-        height: 50px;
+        margin: 0 auto;
       }
     }
     & .banner_img{
@@ -111,6 +128,22 @@
     }
 
   }
+
+
+  #portfolio_section {
+    padding: 60px 0 0;
+    
+    .title {
+      .h2 {
+        font-size: 40px;
+        font-weight: 700;
+        
+        span {
+          color: var(--tex_sec_col);
+        }
+      }
+    }
+  }
   .col-lg-6, .col-12 {
     flex: 0 0 100%;
     max-width: 100%;
@@ -118,6 +151,163 @@
   .card-img-top {
     height: auto; 
   }
+  .img-container {
+    margin-bottom: 0;
+  }
+  
+  .row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .col.no-gutters {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  
+  .img_left {
+    height: 265px;
+  }
+
+  #price_section {
+    padding: 60px 0;
+    
+    .prise_container {
+      
+      margin-top: 40px;
+      border-radius: 15px;
+      &:hover {
+        background-color: var(--black_col);
+        color: var(--sec_color);
+        box-shadow: none;
+        
+        .price_btn {
+          background-color: var(--sec_color);
+        }
+      }
+      
+      h5 {
+        font-size: 22px;
+        
+      }
+      
+      h2 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 40px;
+      }
+      
+      .price_btn {
+        display: flex;
+        justify-content: center;
+        width: 180px;
+        height: 48px;
+        align-items: center;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  #clients_say_section {
+    padding: 80px 0 40px;
+    background-color: var(--sec_color);
+    
+    .clients_contant {
+      text-align: center;
+      margin-bottom: 20px;
+      .claint_title_p {
+        position: relative;
+        margin-left: 35px;
+        
+        &::after {
+          
+          left: 235px;
+        }
+      }
+      
+      h2 {
+        
+        font-size: 38px;
+        
+      }
+      
+      .cliend_style {
+        margin: 0 auto;
+        
+        .client_sm_img {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  
+  }
+
+  #img_gelare {
+    padding: 60px 0 20px;
+  }
+  #contact_section {
+    padding: 60px 0;
+    
+    .contact_info {
+      margin-top: 20px;
+      
+      .contact_icon {
+        margin-top: 30px;
+        
+        .location {
+          margin-right: 20px;
+        }
+        
+        .contact_info_child {
+          h6 {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    padding: 25px 0;
+    background-color: var(--black_col);
+    color: var(--sec_color);
+    & .footer_logo{
+      width: 250px;
+      border: 1px solid #fe8c45;
+      & .img{
+        width: 80%;
+      }
+    }
+    
+    & .footer_copyright {
+      border: 1px solid #fe8c45;
+      a {
+        color: var(--clien_btn);
+        margin: 0 20px;
+        text-decoration: underline;
+      }
+    }
+    
+    .footer_social {
+      border: 1px solid #fe8c45;
+      ul {
+        li {
+          a {
+            display: inline-block;
+            margin-left: 15px;
+            margin-top: 10px;
+            
+            i {
+              font-size: 40px;
+              color: var(--clien_btn);
+            }
+          }
+        }
+      }
+    }
+  }
+  
 }
 
 /* // Large devices (desktops, 992px and up) */
