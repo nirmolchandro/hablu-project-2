@@ -1,0 +1,131 @@
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  
+  /* banner section  */
+  #banner_section{
+    margin-bottom: 40px;
+    .text_banner{
+      margin-top: 20px;
+      text-align: center;
+      & h1{
+        font-size: 27px;
+        line-height: 40px;
+      }
+    }
+    
+  }
+  & .banner_img{
+    
+    & img{
+      width: 100%;
+    }
+  }
+  
+  /* about section  */
+
+  #about_section{
+    padding: 80px 0;
+    background-color: var(--sec_color);
+    & .about_contant{
+      margin-top: 50px;
+      text-align: center;
+      & h1{
+        font-size: 35px;
+      }
+      & .about_btn{
+        display: block;
+  
+        justify-content: center;
+        margin-top: 30px;
+        width: 200px;
+        height: 50px;
+      }
+    }
+    & .banner_img{
+      & img{
+        width: 100%;
+      }
+    }
+
+  }
+  .col-lg-6, .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .card-img-top {
+    height: auto; 
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+
+  /* banner section  */
+  #banner_section{
+    margin-bottom: 40px;
+    .text_banner{
+      margin-top: 20px;
+      & h1{
+        font-size: 45px;
+        line-height: 60px;
+      }
+    }
+    
+  }
+  & .banner_img{
+    
+    & img{
+      width: 100%;
+    }
+  }
+  
+  /* about section  */
+
+  #about_section{
+    padding: 80px 0;
+    background-color: var(--sec_color);
+    & .about_contant{
+      margin-top: 50px;
+      text-align: center;
+      & h1{
+        font-size: 35px;
+      }
+      & .about_btn{
+        display: block;
+  
+        justify-content: center;
+        margin-top: 30px;
+        width: 200px;
+        height: 50px;
+      }
+    }
+    & .banner_img{
+      & img{
+        width: 100%;
+      }
+    }
+
+  }
+  .col-lg-6, .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .card-img-top {
+    height: auto; 
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+
+
+
